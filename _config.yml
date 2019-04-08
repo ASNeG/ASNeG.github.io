@@ -27,7 +27,6 @@ logo: "logo.png"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-bulma
 plugins:
   - jekyll-feed
 
