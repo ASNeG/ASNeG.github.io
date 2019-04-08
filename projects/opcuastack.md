@@ -1,4 +1,4 @@
 ---
-title: Home page
+title: OPC UA Stack
 layout: default
 ---
