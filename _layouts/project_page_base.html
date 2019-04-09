@@ -16,19 +16,20 @@ layout: default
   <nav class="level container">
     <div class="level-left">
       <div class="level-item">
-        <a href="https://github.com/{{ page.github_repo }}">
-          <span class="icon has-text-grey-dark">
-            <i class="fab fa-2x fa-github" title="On GitHub"></i>
-          </span>
-        </a>
-      </div>
-      <div class="level-item icon">
-        <a href="https://{{ page.rtd_name }}.readthedocs.io">
-          <span class="icon has-text-grey-dark">
-            <i class="fas fa-2x fa-book" title="On ReadTheDocs"></i>
-          </span>
-        </a>
-
+        <div class="buttons">
+          <a class="button" href="https://github.com/{{ page.github_repo }}">
+            <span class="icon has-text-grey-dark">
+              <i class="fab fa-github" title=""></i>
+            </span>
+            <span> GitHub </span>
+          </a>
+          <a class="button" href="https://{{ page.rtd_name }}.readthedocs.io">
+            <span class="icon has-text-grey-dark">
+              <i class="fas fa-book" title=""></i>
+            </span>
+            <span> Docs </span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="level-right">
