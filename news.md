@@ -1,13 +1,16 @@
 ---
 title: News
-layout: default
+layout: news_page
 ---
 
 
-<ul>
-  {% for post in site.posts %}
-    <li>
+<div class="tile">
+{% for post in site.posts %}
+  <article class="tile is-child">
+    <p class="title">
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+    </p>
+    <p clas="subtitle"> {{ post.description }} </p>
+  </article>
+{% endfor %}
+</div>
