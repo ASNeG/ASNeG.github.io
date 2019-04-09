@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ page.title }}
+      </h1>
+      <h2 class="subtitle">
+        {{ page.description }}
+      </h2>
+    </div>
+  </div>
+  <nav class="level container">
+    <div class="level-left">
+      <div class="level-item">
+        <a href="https://github.com/{{ page.github_repo }}">
+          <span class="icon has-text-grey-dark">
+            <i class="fab fa-2x fa-github" title="On GitHub"></i>
+          </span>
+        </a>
+      </div>
+      <div class="level-item icon">
+        <a href="https://{{ page.rtd_name }}.readthedocs.io">
+          <span class="icon has-text-grey-dark">
+            <i class="fas fa-2x fa-book" title="On ReadTheDocs"></i>
+          </span>
+        </a>
+
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        {{ '![GitHub release](https://img.shields.io/github/release/repo.svg?color=blue&style=for-the-badge)'| replace: 'repo', page.github_repo | markdownify }}
+      </div>
+      <div class="level-item">
+        {{ '![GitHub All Releases](https://img.shields.io/github/downloads/repo/total.svg?color=green&style=for-the-badge)' | replace: 'repo', page.github_repo | markdownify }}
+      </div>
+    </div>
+  </nav>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    {{ content }}
+  </div>
+</section>

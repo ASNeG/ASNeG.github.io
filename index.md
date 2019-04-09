@@ -1,4 +1,3 @@
 ---
-title: Home page
-layout: default
+layout: home_page
 ---
