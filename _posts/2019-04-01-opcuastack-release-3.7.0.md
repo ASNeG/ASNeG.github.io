@@ -1,10 +1,10 @@
 ---
-layout: news_page
+layout: post
 title:  OPC UA Stack 3.7.0
-description: OPC UA Stack 3.7.0 Released with new application API and faster Information Model
+description: OPC UA Stack 3.7.0 released with new application API and faster Information Model
 date:   2019-04-01 17:22:22 +0500
-categories: release opcuastack
-related_project: opcuastack
+categories: news
+tags: release, opcuastack
 ---
 
 Hi everyone,
@@ -15,7 +15,8 @@ we are happy to announce that our OPC UA Stack 3.7.0 has been released.
 
 Probably you have already noticed that when you're developing your application with the Stack,
 you are forced to type a lot of code to do simple things. Now we've fixed it and
-provided a new much more friendly API:
+provided a new much more friendly API. For a instance, the write operation in a node
+from a user application looked so:
 
 ```cpp
 ServiceTransactionGetNodeReference::SPtr trx = constructSPtr<ServiceTransactionGetNodeReference>();

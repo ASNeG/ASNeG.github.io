@@ -2,21 +2,26 @@
 layout: default
 ---
 
-
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        {{ site.title  }}
+        {{ page.title  }}
       </h1>
+      <p> {{ page.date | date: "%b %d, %Y" }} </p>
       <h2 class="subtitle">
-        {{ site.description  }}
+        {{ page.description  }}
       </h2>
     </div>
   </div>
 </section>
 <section class="section">
   <div class="container">
+    <div class="content is-medium">
     {{ content }}
+    </div>
   </div>
 </section>
+
+
+<p> <strong>Date:</strong> {{ page.date | date: "%b %d, %Y" }} </p>
