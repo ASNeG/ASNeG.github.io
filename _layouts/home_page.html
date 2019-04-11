@@ -49,7 +49,7 @@ layout: default
                 <p>
                   {% for project in site.data.projects %}
                   <article>
-                     <a href="{{ project.url }}"> {{ project.name }} </a> | {{ project.description }}
+                     <a href="{{ project.url }}"> {{ project.name }} </a> | {{ project.description | markdownify | strip_html }}
                   </article>
                   {% endfor %}
                 </p>
