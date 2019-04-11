@@ -9,7 +9,7 @@ layout: default
         {{ page.title }}
       </h1>
       <h2 class="subtitle">
-        {{ page.description }}
+        {{ page.description | markdownify}}
       </h2>
     </div>
   </div>
@@ -23,12 +23,14 @@ layout: default
             </span>
             <span> GitHub </span>
           </a>
+          {% if page.rtd_name %}
           <a class="button" href="https://{{ page.rtd_name }}.readthedocs.io">
             <span class="icon has-text-grey-dark">
               <i class="fas fa-book" title=""></i>
             </span>
             <span> Docs </span>
           </a>
+          {% endif %}
         </div>
       </div>
     </div>

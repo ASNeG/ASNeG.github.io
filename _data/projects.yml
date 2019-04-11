@@ -3,3 +3,8 @@
   description:  >-
     ASNeG OPC UA Stack is an open source framework for development
     and distribution of OPC UA client\server applications.
+
+- name: ASNeG-Demo
+  url: projects/asnegdemo
+  description:  >-
+    ASNeG-Demo is a demo OPC UA application showing how developers can use [OPC UA Stack](/projects/opcuastack) 
