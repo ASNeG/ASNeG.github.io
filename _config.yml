@@ -16,7 +16,7 @@
 title: ASNeG - Automation Service of Next Generation
 email: info@asneg.de
 description: >- # this means to ignore newlines until "baseurl:"
-  ASNeG is an open source project whose goal is to make the development of based on
+  ASNeG is an open source organization whose goal is to make the development of based on
   OPC UA technology applications easier.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://asneg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
