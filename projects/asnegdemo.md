@@ -14,7 +14,7 @@ about: |
   * [Authentication.cpp](https://github.com/ASNeG/ASNeG-Demo/blob/master/src/ASNeG-Demo/Library/Authentication.cpp)
     provides user authentication and access control to several OPC UA nodes
   * [DemoLibrary.cpp](https://github.com/ASNeG/ASNeG-Demo/blob/master/src/ASNeG-Demo/Library/DemoLibrary.cpp)
-    entry point of the application
+    is an entry point of the application
   * [Event.cpp](https://github.com/ASNeG/ASNeG-Demo/blob/master/src/ASNeG-Demo/Library/Event.cpp)
     sends events of several types
   * [Function.cpp](https://github.com/ASNeG/ASNeG-Demo/blob/master/src/ASNeG-Demo/Library/Function.cpp)
