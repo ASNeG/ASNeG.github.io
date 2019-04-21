@@ -4,6 +4,7 @@ title:  ASNeG-Demo is available
 description: Demo application based on ASNeG OPC UA Stack has its page on the website
 date:   2019-04-11
 categories: news
+github_comments_issueid: 2
 tags: website, asnegdemo
 ---
 

@@ -23,6 +23,7 @@ url: "https://asneg.github.io" # the base hostname & protocol for your site, e.g
 twitter_username:
 github_username:  asneg
 logo: "logo.png"
+github_comments_repository:  asneg/asneg.github.io
 
 # Build settings
 markdown: kramdown
