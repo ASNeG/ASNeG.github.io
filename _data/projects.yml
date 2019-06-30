@@ -4,6 +4,11 @@
     ASNeG OPC UA Stack is an open source framework for development
     and distribution of OPC UA client\server applications.
 
+- name: OPC UA Web Server
+  url: projects/opcuawebserver
+  description:  >-
+    ASNeG OPC UA Web Server is a HTTP(S) server which provide access to OPC UA data via the Internet.
+
 - name: ASNeG-Demo
   url: projects/asnegdemo
   description:  >-
