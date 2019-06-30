@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Development Diary \#1
+title:  Development Diary N1
 description: OPC UA Stack's roadmap, OPC UA Web Server
 date:   2019-06-29 17:22:22 +0500
 categories: news

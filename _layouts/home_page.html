@@ -33,9 +33,11 @@ layout: default
             <div class="tile is-child">
               <p class="title">Last News</p>
               <p class="subtitle"> </p>
-                {% for post in site.posts limit:5 %}
+                {% for post in site.posts limit:3 %}
                 <article>
-                  {{ post.date | date: "%b %d, %Y" }}, <a href="{{ post.url }}"> {{ post.description }} </a>
+                  {{ post.date | date: "%b %d, %Y" }}, <a href="{{ post.url }}"> 
+                    <strong> {{ post.title }}</strong>: {{ post.description }} 
+                  </a>
                 </article>
                 {% endfor %}
             </div>
