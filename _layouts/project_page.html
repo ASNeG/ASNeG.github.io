@@ -34,7 +34,8 @@ layout: project_page_base
     {% for post in site.posts %}
       {% if post.tags contains page.project %}
       <article>
-        {{ post.date | date: "%b %d, %Y" }}, <a href="{{ post.url }}"> {{ post.description }} </a>
+        <a href="{{ post.url }}"> <strong>{{ post.title | markdownify }}</strong> </a>
+        {{ post.date | date: "%b %d, %Y" }},  {{ post.description }}
       </article>
       {% endif %}
     {% endfor %}

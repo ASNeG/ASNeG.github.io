@@ -6,7 +6,7 @@ layout: default
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        {{ page.title  }}
+        {{ page.title | markdownify }}
       </h1>
       <p> {{ page.date | date: "%b %d, %Y" }} </p>
       <h2 class="subtitle">

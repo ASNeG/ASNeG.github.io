@@ -8,9 +8,9 @@ layout: news_page
 {% for post in site.posts %}
   <article class="tile is-child">
 
-    <p class="title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </p>
+    <div class="title">
+      <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
+    </div>
     <p class="subtitle">   {{ post.date | date: "%b %d, %Y" }}, {{ post.description }} </p>
   </article>
 {% endfor %}

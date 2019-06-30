@@ -5,7 +5,7 @@ description: OPC UA Stack 3.7.0 released with new application API and faster Inf
 date:   2019-04-01 17:22:22 +0500
 categories: news
 github_comments_issueid: 1
-tags: release, opcuastack
+tags: [opcuastack, release]
 ---
 
 Hi everyone,

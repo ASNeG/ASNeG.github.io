@@ -5,7 +5,7 @@ description: Demo application based on ASNeG OPC UA Stack has its page on the we
 date:   2019-04-11
 categories: news
 github_comments_issueid: 2
-tags: website, asnegdemo
+tags: [website, asnegdemo]
 ---
 
 Hi everyone,
