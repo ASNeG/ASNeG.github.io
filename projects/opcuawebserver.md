@@ -23,7 +23,11 @@ about: |
   ![OPC UA Web Server Structure](/images/opcuawebserver_structure.png)
 
   In addition, the Web Server provides **Web Panel** for visualization of the process data. **Web Panel** uses a JavaScript library of visual components which can be bound with OPC UA variables. You can use it as a very
-  simple SCADA system configured by XML files.
+  simple SCADA system configured by XML files. 
+
+  ## Demo Server
+   
+  To see, how the Web Server works online, you can use our [demo server](http://jenkins.asneg.de:8083/).
 
 
   ## Development Status
