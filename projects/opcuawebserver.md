@@ -2,7 +2,7 @@
 title: OPC UA Web Server
 project: opcuawebserver
 description:  >-
-    ASNeG OPC UA Web Server is a Web application which provides access to OPC UA data via the Internet.
+    ASNeG OPC UA Web Server is a web application which provides access to OPC UA data via the Internet.
 layout: project_page
 about: |
 
