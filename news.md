@@ -6,12 +6,13 @@ layout: news_page
 
 <div class="tile is-ancestor is-vertical">
 {% for post in site.posts %}
-  <article class="tile is-child">
-
-    <div class="title">
-      <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
+  <div class="tile is-child">
+    <div class="content"> 
+      <div class="subtitle">
+        <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
+      </div>
+      {{ post.date | date: "%b %d, %Y" }}, {{ post.description }} 
     </div>
-    <p class="subtitle">   {{ post.date | date: "%b %d, %Y" }}, {{ post.description }} </p>
-  </article>
+  </div>
 {% endfor %}
 </div>

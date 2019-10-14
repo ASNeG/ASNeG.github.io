@@ -47,14 +47,20 @@ layout: default
           <div class="tile is-parent">
               <div class="tile is-child">
                 <p class="title">Projects</p>
-                <p class="subtitle"></p>
-                <p>
-                  {% for project in site.data.projects %}
-                  <article>
-                     <a href="{{ project.url }}"> {{ project.name }} </a> | {{ project.description | markdownify | strip_html }}
-                  </article>
-                  {% endfor %}
-                </p>
+                <div class="content">
+                    {% for project in site.data.projects %}
+                    <div class="tile box">
+                      <div class="content">
+                        <p class="subtitle"><a href="{{ project.url }}"> {{ project.name }} </a> </p>
+                        {{ project.description | markdownify | strip_html }}
+                        <p>
+                          {{ '<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/repo.svg?color=(58a45e)">' | replace: 'repo', project.github_repo }}                
+                          {{ '<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/downloads/repo/total.svg?color=(58a45e)">' | replace: 'repo', project.github_repo }}                
+                        </p>
+                      </div>
+                    </div>
+                    {% endfor %}
+                </div>
               </div>
           </div>
         </div>
