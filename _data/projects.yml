@@ -2,7 +2,7 @@
   url: projects/opcuastack
   description:  >-
     ASNeG OPC UA Stack is an open source framework for development
-    and distribution of OPC UA client\server applications.
+    and distribution of OPC UA client\server applications in C++.
   github_repo: ASNeG/OpcUaStack
 
 - name: OPC UA Web Server

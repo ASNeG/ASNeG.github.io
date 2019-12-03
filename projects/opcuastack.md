@@ -3,7 +3,7 @@ title: OPC UA Stack
 project: opcuastack
 description:  >-
   ASNeG OPC UA Stack is an open source framework for development
-  and distribution of OPC UA client\server applications.
+  and distribution of OPC UA client\server applications in C++.
 layout: project_page
 about: |
 
