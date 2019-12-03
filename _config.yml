@@ -16,7 +16,7 @@
 title: ASNeG - Automation Service of Next Generation
 email: info@asneg.de
 description: >- # this means to ignore newlines until "baseurl:"
-  OPC UA solutions based on C++ open-source client\\server library
+  Open-source OPC UA solutions and client/server SDK in C++
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://asneg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:

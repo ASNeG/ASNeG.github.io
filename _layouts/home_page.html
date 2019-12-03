@@ -2,15 +2,14 @@
 layout: default
 ---
 
-
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        {{ site.title  }}
+        {{ site.title }}
       </h1>
       <h2 class="subtitle">
-        {{ site.description  }}
+        {{ site.description }}
       </h2>
     </div>
   </div>
@@ -21,47 +20,54 @@ layout: default
       <div class="tile is-vertical">
         <div class="tile">
           <div class="tile is-parent">
-              <div class="tile is-child">
-                <p class="title">About Us</p>
-                <p class="subtitle"> </p>
-                <p>
-                  {{ page.about_us}}
-                </p>
-              </div>
-          </div>
-          <div class="tile is-parent is-vertical is-6">
             <div class="tile is-child">
-              <p class="title">Last News</p>
-              <p class="subtitle"> </p>
-                {% for post in site.posts limit:3 %}
-                <article>
-                  {{ post.date | date: "%b %d, %Y" }}, <a href="{{ post.url }}"> 
-                    <strong> {{ post.title }}</strong>: {{ post.description }} 
-                  </a>
-                </article>
+              <p class="title">Our Projects</p>
+              <div class="content">
+                {% for project in site.data.projects %}
+                <div class="tile box">
+                  <div class="content">
+                    <p class="subtitle"><a href="{{ project.url }}"> {{ project.name }} </a></p>
+                    {{ project.description | markdownify | strip_html }}
+                    <p>
+                      {{ '<img alt="GitHub release (latest by date)"
+                               src="https://img.shields.io/github/v/release/repo.svg?color=(58a45e)">' | replace:
+                      'repo', project.github_repo }}
+                      {{ '<img alt="GitHub release (latest by date)"
+                               src="https://img.shields.io/github/downloads/repo/total.svg?color=(58a45e)">' | replace:
+                      'repo', project.github_repo }}
+                    </p>
+                  </div>
+                </div>
                 {% endfor %}
+              </div>
             </div>
           </div>
-        </div>
-        <div class="tile">
-          <div class="tile is-parent">
-              <div class="tile is-child">
-                <p class="title">Projects</p>
+          <div class="tile is-parent is-vertical is-6">
+
+            <div class="tile is-child">
+              <p class="title">Last News</p>
+              <div class="tile box">
                 <div class="content">
-                    {% for project in site.data.projects %}
-                    <div class="tile box">
-                      <div class="content">
-                        <p class="subtitle"><a href="{{ project.url }}"> {{ project.name }} </a> </p>
-                        {{ project.description | markdownify | strip_html }}
-                        <p>
-                          {{ '<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/repo.svg?color=(58a45e)">' | replace: 'repo', project.github_repo }}                
-                          {{ '<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/downloads/repo/total.svg?color=(58a45e)">' | replace: 'repo', project.github_repo }}                
-                        </p>
-                      </div>
-                    </div>
-                    {% endfor %}
+                  <p class="subtitle">
+                    {{ site.posts.first.date | date: "%b %d %Y" }},
+                    <strong> {{ site.posts.first.title }}</strong>: {{ site.posts.first.description }}
+                  </p>
+                  <article>
+                    {{ site.posts.first.content | markdownify | truncatewords: 40 }}
+                    <p>
+                      <a href="{{site.posts.first.url}}">Read more</a>
+                    </p>
+                  </article>
                 </div>
               </div>
+              {% for post in site.posts limit:3 offset:1 %}
+              <article>
+                {{ post.date | date: "%b %d %Y" }}, <a href="{{ post.url }}">
+                <strong> {{ post.title }}</strong>: {{ post.description }}
+              </a>
+              </article>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>

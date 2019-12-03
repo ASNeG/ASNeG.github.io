@@ -11,7 +11,7 @@ layout: news_page
       <div class="subtitle">
         <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
       </div>
-      {{ post.date | date: "%b %d, %Y" }}, {{ post.description }} 
+      {{ post.date | date: "%b %d %Y" }}, {{ post.description }} 
     </div>
   </div>
 {% endfor %}
