@@ -7,7 +7,7 @@ description:  >-
 layout: project_page
 about: |
 
-  ASNeG OPC UA Stack is an open source framework for development and distribution of OPC UA client\\server applications.
+  ASNeG OPC UA Stack is an open source C++ framework for development and distribution of OPC UA client\\server applications.
   It provides SDK to write your applications in C++ and an infrastructure to run and distribute them.
 
   The stack contains the following parts:
